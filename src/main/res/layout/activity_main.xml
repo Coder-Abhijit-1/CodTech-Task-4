@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#C8CAE4"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <!-- Title -->
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fitness Tracker"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:textColor="#1A237E"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="24dp" />
+
+        <!-- Steps Card -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:elevation="8dp"
+            android:radius="16dp"
+            android:backgroundTint="#E9E4E4">
+
+            <TextView
+                android:id="@+id/tv_steps"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Steps: 0"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:textColor="#3F51B5"
+                android:padding="20dp" />
+        </androidx.cardview.widget.CardView>
+
+        <!-- Distance Card -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:elevation="8dp"
+            android:radius="16dp"
+            android:backgroundTint="#E9E4E4">
+
+            <TextView
+                android:id="@+id/tv_distance"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Distance: 0.0 km"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:textColor="#009688"
+                android:padding="20dp" />
+        </androidx.cardview.widget.CardView>
+
+        <!-- Calories Card -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:elevation="8dp"
+            android:radius="16dp"
+            android:backgroundTint="#E9E4E4">
+
+            <TextView
+                android:id="@+id/tv_calories"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Calories: 0 kcal"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:textColor="#FF5722"
+                android:padding="20dp" />
+        </androidx.cardview.widget.CardView>
+
+        <!-- Pie Chart -->
+        <com.github.mikephil.charting.charts.PieChart
+            android:id="@+id/pieChart"
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:layout_marginBottom="32dp" />
+    </LinearLayout>
+</ScrollView>
